@@ -1,0 +1,6 @@
+ultralytics
+opencv-python
+numpy
+paho-mqtt>=2.0,<3.0
+PyYAML
+pytest

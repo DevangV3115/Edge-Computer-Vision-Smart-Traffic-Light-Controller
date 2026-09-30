@@ -1,0 +1,16 @@
+# Project configuration.
+# The Python MQTT publisher also supports TRAFFIC_MQTT_BROKER and
+# TRAFFIC_MQTT_PORT environment variables.
+
+mqtt:
+  # Final architecture: Mosquitto will run locally on the Raspberry Pi.
+  broker_host: "127.0.0.1"
+  port: 1883
+  signal_topic: "traffic/signals"
+  status_topic: "traffic/status"
+
+traffic:
+  lanes: 4
+  min_green_time: 10
+  max_green_time: 60
+  default_green_time: 20
